@@ -20,7 +20,7 @@ app.use(fileUpload());
 
 const endpoint = 'https://models.github.ai/inference';
 const model = 'openai/gpt-4.1';
-const token = process.env.GITHUB_TOKEN || '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'; // For demo only, use env var in production
+const token = process.env.GITHUB_TOKEN; // For demo only, use env var in production
 
 // Helper: Extract text from PDF (simple, for demo)
 const pdfParse = async (buffer) => {
